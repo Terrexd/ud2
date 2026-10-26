@@ -1,10 +1,9 @@
-// components/ui/BotonRoto.js · EJERCICIO 5 · Este componente tiene fallos
-import { Pressable, StyleSheet } from "react-native";
+import { Pressable, StyleSheet, Text } from "react-native"; // 2º Error - No está importado el Text
 
 export default function BotonRoto({ titulo, onPress, variante }) {
   return (
     <Pressable
-      style={[styles.base, estilosVariante.variante]}
+      style={[styles.base, estilosVariante[variante]]} // 1º Error - No es estilosVariantes.variante
       onPress={onPress}
     >
       <Text style={styles.texto}>{titulo}</Text>

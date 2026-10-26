@@ -10,18 +10,42 @@ export default function Catalogo() {
       <Text style={styles.seccion}>Boton · variantes</Text>
       <Boton
         titulo="Primario"
+        tamano="pequeno"
         variante="primario"
         onPress={() => console.log("primario")}
       />
       <Boton
         titulo="Secundario"
+        tamano="grande"
         variante="secundario"
         onPress={() => console.log("secundario")}
       />
       <Boton
         titulo="Peligro"
+        tamano="pequeno"
         variante="peligro"
         onPress={() => console.log("peligro")}
+      />
+
+      <Boton
+        titulo="Exitoso"
+        tamano="grande"
+        variante="exito"
+        onPress={() => console.log("exitoso")}
+      />
+
+      <Boton
+        titulo="aviso"
+        tamano="pequeno"
+        variante="aviso"
+        onPress={() => console.log("aviso")}
+      />
+
+      <Boton
+        titulo="contorno"
+        tamano="grande"
+        variante="contorno"
+        onPress={() => console.log("contorno")}
       />
     </View>
   );
