@@ -1,5 +1,5 @@
 // app/tareas.js · EJERCICIO 5 · Lista de tareas con etiquetas
-import { View, Text, FlatList, StyleSheet } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import { TAREAS } from "../data/tareas";
 
 export default function Tareas() {
@@ -12,7 +12,8 @@ export default function Tareas() {
         renderItem={({ item }) => (
           <View style={styles.fila}>
             <Text style={styles.nombre}>{item.titulo}</Text>
-            {/* Aquí irán las etiquetas */}
+            <Text style={"Hecha" ? styles.exito : styles.aviso}>Hecha</Text>
+            <Text style={styles.urgente ? true : false}> Urgente</Text>
           </View>
         )}
       />
